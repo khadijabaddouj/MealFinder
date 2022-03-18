@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/teal_200"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".register">
+
+    <view
+        android:id="@+id/view"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="-16dp"
+        android:background="@drawable/ellipse1"
+
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="360dp"
+        android:layout_height="530dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="3dp"
+
+        >
+
+        <Button
+            android:id="@+id/signup"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="24dp"
+            android:text="                                Sign Up "
+
+            android:textColor="#FC5656"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="60dp"
+            app:strokeColor="#C4C4C4"
+            app:strokeWidth="2dp">
+
+        </Button>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Log In "
+            android:textColor="@color/white"
+            app:backgroundTint="#FC5656"
+            app:cornerRadius="60dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="97dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColorHighlight="#FC5656"
+            android:textColorLink="#FC5656" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/passwordc"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="157dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Your Password?"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="170dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="190dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="270dp"
+            android:text="Log In "
+            android:textColor="@color/white"
+            app:backgroundTint="#FC5656"
+            app:cornerRadius="60dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="170dp"
+            app:backgroundTint="#C4C4C4"
+            android:background="@drawable/hide"
+            />
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="304dp"
+        android:layout_height="178dp"
+        app:srcCompat="@drawable/trt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+
+</LinearLayout>
