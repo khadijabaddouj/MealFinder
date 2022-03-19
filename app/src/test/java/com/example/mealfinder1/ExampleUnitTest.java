@@ -1,4 +1,4 @@
-package com.example.meal_finder;
+package com.example.mealfinder1;
 
 import org.junit.Test;
 
