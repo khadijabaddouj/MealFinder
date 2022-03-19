@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004804397215",
+    "project_id": "mealfinder1",
+    "storage_bucket": "mealfinder1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004804397215:android:4e397a448c1fc9dfd66aaa",
+        "android_client_info": {
+          "package_name": "com.example.mealfinder1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004804397215-223rf7ftgr00nhk13okt6v4f9keb5vc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Mbj6PlcgeP6Mt3EjLZLLBy0YcEw4pDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004804397215-223rf7ftgr00nhk13okt6v4f9keb5vc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
