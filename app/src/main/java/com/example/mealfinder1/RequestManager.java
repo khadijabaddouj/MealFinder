@@ -25,7 +25,7 @@ public class RequestManager {
 
     public void getRandomRecipes(RandomRecipeListener listener){
         SpoonacularApi spoonacularApi = retrofit.create(SpoonacularApi.class);
-        Call<RandomRecipes> call = spoonacularApi.callRandomRecipes(context.getString(R.string.api_key), "1");
+        Call<RandomRecipes> call = spoonacularApi.callRandomRecipes(context.getString(R.string.api_key), "10");
         call.enqueue(new Callback<RandomRecipes>() {
             @Override
             public void onResponse(Call<RandomRecipes> call, Response<RandomRecipes> response) {
