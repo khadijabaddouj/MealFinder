@@ -5,27 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FC5656"
+    android:background="@drawable/background"
     tools:context=".RandomRecipeActivity">
-    <TextView
-        android:layout_width="match_parent"
+
+    <SearchView
+        android:id="@+id/RecipesSearchView"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Work Place"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_margin="16dp"
-        android:fontFamily="monospace"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Find your delicious meal for today"
-        android:layout_marginLeft="16dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="16dp"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        android:textColor="#989393"/>
+        android:elevation="2dp"
+        android:background="#fff"
+
+        android:layout_gravity="center"
+        android:iconifiedByDefault="false"
+
+        android:queryHint="rechercher... " >
+    </SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_recipe"
