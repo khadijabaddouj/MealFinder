@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item android:id="@+id/action_navigation"
+        android:title="Home"
+        android:icon="@drawable/home"
+
+
+
+        />
+
+    <item android:id="@+id/action_settings"
+        android:title="Favoris"
+        android:icon="@drawable/ic_add"
+        app:backgroundTint="@color/black"
+        />
+    <item android:id="@+id/action_search"
+        android:title="Profile"
+        android:icon="@drawable/pic"
+        app:backgroundTint="@color/black"
+        />
+
+</menu>

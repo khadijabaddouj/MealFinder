@@ -83,7 +83,7 @@ public class register  extends AppCompatActivity {
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
-                                    showMainActivity();
+                                    Profile();
                                 }
                             });
                         } else {
@@ -94,8 +94,8 @@ public class register  extends AppCompatActivity {
                 });
     }
 
-    private void showMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    private void Profile() {
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
         finish();
     }

@@ -40,7 +40,7 @@ public class login extends AppCompatActivity {
             }
         });
 
-       Button tvSwitchToRegister = findViewById(R.id.signup);
+        Button tvSwitchToRegister = findViewById(R.id.signup);
         tvSwitchToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,7 +76,7 @@ public class login extends AppCompatActivity {
     }
 
     private void showMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
         finish();
     }
