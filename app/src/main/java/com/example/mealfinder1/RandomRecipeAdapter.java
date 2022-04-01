@@ -20,10 +20,12 @@ public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHo
 
     Context context;
     List<Recipe> recipes;
+    RecipeOnClickListener clickListener;
 
-    public RandomRecipeAdapter(Context context, List<Recipe> recipes) {
+    public RandomRecipeAdapter(Context context, List<Recipe> recipes, RecipeOnClickListener clickListener) {
         this.context = context;
         this.recipes = recipes;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -37,11 +39,15 @@ public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHo
         holder.textView_title.setText(recipes.get(position).title);
         holder.textView_title.setSelected(true);
         holder.textView_likes.setText(recipes.get(position).aggregateLikes+" Likes");
-        holder.textView_likes.setText(recipes.get(position).aggregateLikes+" Likes");
         holder.textView_servings.setText(recipes.get(position).servings+" Servings");
         holder.textView_duration.setText(recipes.get(position).readyInMinutes+" Minutes");
         Picasso.get().load(recipes.get(position).image).into(holder.imageView_meal);
-
+        holder.recipe_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickListener.onRecipeClick(String.valueOf(recipes.get(holder.getAdapterPosition()).id));
+            }
+        });
 
     }
 

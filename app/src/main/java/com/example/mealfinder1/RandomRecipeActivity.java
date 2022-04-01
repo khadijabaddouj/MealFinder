@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ public class RandomRecipeActivity extends AppCompatActivity {
             recyclerView = findViewById(R.id.recycler_recipe);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new GridLayoutManager(RandomRecipeActivity.this,1));
-            randomRecipeAdapter = new RandomRecipeAdapter(RandomRecipeActivity.this, response.recipes);
+            randomRecipeAdapter = new RandomRecipeAdapter(RandomRecipeActivity.this, response.recipes, recipeOnClickListener);
             recyclerView.setAdapter(randomRecipeAdapter);
         }
 
@@ -46,6 +47,13 @@ public class RandomRecipeActivity extends AppCompatActivity {
         manager.getRandomRecipes(randomRecipeListener);
         //dialog.show();
     }
+
+    private final RecipeOnClickListener recipeOnClickListener = new RecipeOnClickListener() {
+        @Override
+        public void onRecipeClick(String id) {
+            startActivity(new Intent(RandomRecipeActivity.this, RecipeInfoActivity.class).putExtra("id", id));
+        }
+    };
 
 
 }
