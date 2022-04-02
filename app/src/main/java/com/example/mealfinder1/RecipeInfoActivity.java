@@ -35,6 +35,7 @@ public class RecipeInfoActivity extends AppCompatActivity {
             textView_recipe_source.setText(Html.fromHtml(linkedText));
             textView_recipe_source.setMovementMethod(LinkMovementMethod.getInstance());
             textView_summary.setText(Html.fromHtml(response.summary));
+            textView_summary.setMovementMethod(LinkMovementMethod.getInstance());
             Picasso.get().load(response.image).into(imageView_recipe);
             recycler_ingredients.setHasFixedSize(true);
             recycler_ingredients.setLayoutManager(new LinearLayoutManager(RecipeInfoActivity.this, LinearLayoutManager.HORIZONTAL, false));
