@@ -34,7 +34,7 @@ public class RecipeInfoActivity extends AppCompatActivity {
                     String.format("<a href=\"%s\">"+response.sourceName+"</a> ", response.sourceUrl);
             textView_recipe_source.setText(Html.fromHtml(linkedText));
             textView_recipe_source.setMovementMethod(LinkMovementMethod.getInstance());
-            textView_summary.setText(response.summary);
+            textView_summary.setText(Html.fromHtml(response.summary));
             Picasso.get().load(response.image).into(imageView_recipe);
             recycler_ingredients.setHasFixedSize(true);
             recycler_ingredients.setLayoutManager(new LinearLayoutManager(RecipeInfoActivity.this, LinearLayoutManager.HORIZONTAL, false));
