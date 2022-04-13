@@ -4,6 +4,10 @@ import android.content.Context;
 
 import com.example.mealfinder1.Model.RandomRecipes;
 import com.example.mealfinder1.Model.RecipeInformation;
+import com.example.mealfinder1.Model.SimilarRecipeResponse;
+import com.example.mealfinder1.Model.SimilarRecipesListener;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -63,6 +67,28 @@ public class RequestManager {
         });
     }
 
+    public void getSimilarRecipe(SimilarRecipesListener listener, int id) {
+
+        CallSimilarRecipes callSimilarRecipes = retrofit.create(CallSimilarRecipes.class);
+        Call<List<SimilarRecipeResponse>> call = callSimilarRecipes.callSimilarRecipe(id,"4",context.getString(R.string.api_key));
+        call.enqueue(new Callback<List<SimilarRecipeResponse>>() {
+            @Override
+            public void onResponse(Call<List<SimilarRecipeResponse>> call, Response<List<SimilarRecipeResponse>> response) {
+                if(!response.isSuccessful()){
+                    listener.didError(response.message());
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+            }
+
+            @Override
+            public void onFailure(Call<List<SimilarRecipeResponse>> call, Throwable t) {
+                listener.didError(t.getMessage());
+
+            }
+        });
+    }
+
     private interface SpoonacularApi{
 
         @GET("recipes/random")
@@ -76,4 +102,17 @@ public class RequestManager {
                 @Query("apiKey") String apiKey
         );
     }
+
+    private interface CallSimilarRecipes{
+        @GET("recipes/{id}/similar")
+        Call<List<SimilarRecipeResponse>> callSimilarRecipe(
+
+                @Path("id") int id,
+                @Query("number") String number,
+                @Query("apiKey") String apiKey
+
+        );
+
+    }
+
 }
