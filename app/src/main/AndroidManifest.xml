@@ -12,16 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MealFinder1">
         <activity
-            android:name=".RecipeInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RandomRecipeActivity"
-            android:exported="true">
+            android:name=".SearchRecipeByIngredients"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>        </activity>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecipeInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RandomRecipeActivity"
+
+            android:exported="false">
+                  </activity>
+
+
         <activity
             android:name=".Profile"
             android:exported="false" />
@@ -30,7 +38,9 @@
             android:exported="false" />
         <activity
             android:name=".register"
-            android:exported="false" />
+                   android:exported="false"></activity>
+
+           
 
         <activity android:name=".MainActivity" />
     </application>
