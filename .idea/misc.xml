@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/activity_recipe_info.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/card_ingredients.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/list_similar_recipe.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_register.xml" value="0.1" />
