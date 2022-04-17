@@ -3,14 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_register.xml" value="0.1" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_login.xml" value="0.15081521739130435" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_profile.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_random_recipe.xml" value="0.33" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_register.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/card_random_recipe.xml" value="0.33" />
+        <entry key="..\:/MealFinder/app/src/main/res/layout/activity_search_recipe.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>
