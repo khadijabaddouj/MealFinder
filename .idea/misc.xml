@@ -3,18 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/activity_recipe_info.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/card_ingredients.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/OneDrive/Bureau/S4/Android/Projet1/MealFinder/app/src/main/res/layout/list_similar_recipe.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MealFinder1/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/hp/Desktop/Lastproject/MealFinder/app/src/main/res/layout/activity_search_recipe_by_ingredients.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/Desktop/Lastproject/MealFinder/app/src/main/res/layout/recipe_item.xml" value="0.1" />
+        <entry key="..\:/Users/hp/Desktop/PA2/MealFinder/app/src/main/res/drawable-v24/ic_baseline_login_24.xml" value="0.1785" />
+        <entry key="..\:/Users/hp/Desktop/PA2/MealFinder/app/src/main/res/layout/activity_profile.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/Desktop/PA2/MealFinder/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1796875" />
         <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_login.xml" value="0.15081521739130435" />
         <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_profile.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_random_recipe.xml" value="0.33" />
+        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_random_recipe.xml" value="0.1" />
+        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_recipe_info.xml" value="0.22" />
         <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/activity_register.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/card_ingredients.xml" value="0.33" />
         <entry key="..\:/Users/hp/Documents/MealFinder/app/src/main/res/layout/card_random_recipe.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2122222900390625" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/activity_random_recipe.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/activity_search_recipe.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/card_random_recipe.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/item_recipe.xml" value="0.24322916666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
