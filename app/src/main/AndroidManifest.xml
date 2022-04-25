@@ -13,7 +13,15 @@
         android:theme="@style/Theme.MealFinder1">
         <activity
             android:name=".SearchRecipeByIngredients"
-            android:exported="true" >
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchRecipeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
