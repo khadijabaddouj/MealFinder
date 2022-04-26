@@ -36,7 +36,7 @@ public class RecipeInfoActivity extends AppCompatActivity {
         public void didFetch(RecipeInformation response, String message) {
             progressDialog.dismiss();
             textView_recipe_name.setText(response.title);
-            //textView_recipe_source.setText(response.sourceName);
+            textView_recipe_source.setText(response.sourceName);
             String linkedText =
                     String.format("<a href=\"%s\">"+response.sourceName+"</a> ", response.sourceUrl);
             textView_recipe_source.setText(Html.fromHtml(linkedText));

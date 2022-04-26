@@ -29,9 +29,16 @@ public class RequestManager {
         this.context = context;
     }
 
-    public void getRandomRecipes(RandomRecipeListener listener){
+    public void getRandomRecipes(RandomRecipeListener listener, List<String> tags){
         SpoonacularApi spoonacularApi = retrofit.create(SpoonacularApi.class);
-        Call<RandomRecipes> call = spoonacularApi.callRandomRecipes(context.getString(R.string.api_key), "10");
+        Call<RandomRecipes> call;
+        if(tags.isEmpty()){
+             call = spoonacularApi.callRandomRecipes(context.getString(R.string.api_key), "10");
+        }
+        else {
+             call = spoonacularApi.callRecipesByTags(context.getString(R.string.api_key), "10", tags);
+        }
+
         call.enqueue(new Callback<RandomRecipes>() {
             @Override
             public void onResponse(Call<RandomRecipes> call, Response<RandomRecipes> response) {
@@ -95,6 +102,12 @@ public class RequestManager {
         Call<RandomRecipes> callRandomRecipes(
                 @Query("apiKey") String apiKey,
                 @Query("number") String number
+        );
+        @GET("recipes/random")
+        Call<RandomRecipes> callRecipesByTags(
+                @Query("apiKey") String apiKey,
+                @Query("number") String number,
+                @Query("tags") List<String> tags
         );
         @GET("recipes/{id}/information")
         Call<RecipeInformation> callRecipeInformation(

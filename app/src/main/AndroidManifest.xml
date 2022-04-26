@@ -20,7 +20,7 @@
             android:name=".RecipeDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchRecipeActivity"
+            android:name=".RandomRecipeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,7 @@
             android:name=".RecipeInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".RandomRecipeActivity"
+            android:name=".SearchRecipeActivity"
 
             android:exported="false">
                   </activity>
